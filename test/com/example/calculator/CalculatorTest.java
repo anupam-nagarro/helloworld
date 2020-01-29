@@ -1,15 +1,15 @@
 package com.example.calculator;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 class CalculatorTest {
 
 	@Test
 	void test_add() {
 		Calculator calc = new Calculator();
-		assertEquals(2, calc.add(1, 1), "The output should be the sum of the two arguments");
+		assertEquals("The output should be the sum of the two arguments", 2, calc.add(1, 1));
 	}
 
 }
